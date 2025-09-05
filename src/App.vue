@@ -2,48 +2,41 @@
 // import HelloWorld from './components/HelloWorld.vue'
 import JSON from './components/JSON.vue'
 // import TheWelcome from './components/TheWelcome.vue'
+import Form from './components/Form.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+    <!-- <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" /> -->
 
     <div class="wrapper">
       <!-- <HelloWorld msg="You did it!" /> -->
-      <JSON />
+      <!-- <JSON /> -->
     </div>
   </header>
 
-  <!-- <main>
-    <TheWelcome />
-  </main> -->
+  <main>
+    <Form />
+  </main>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
+<style>
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.page-center {
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 24x;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+.form-warp {
+  width: 100%;
+  max-width: 560px;
 }
 </style>
