@@ -1,42 +1,15 @@
-<script setup>
-// import HelloWorld from './components/HelloWorld.vue'
-import JSON from './components/JSON.vue'
-// import TheWelcome from './components/TheWelcome.vue'
-import Form from './components/Form.vue'
-</script>
-
 <template>
-  <header>
-    <!-- <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" /> -->
-
-    <div class="wrapper">
-      <!-- <HelloWorld msg="You did it!" /> -->
-      <!-- <JSON /> -->
-    </div>
-  </header>
-
-  <main>
-    <Form />
-  </main>
+  <div class="bg-light min-vh-100 d-flex flex-column">
+    <NavBar />
+    <main class="container my-4 flex-grow-1">
+      <router-view />
+    </main>
+    <footer class="text-center py-3 text-secondary">
+      © {{ new Date().getFullYear() }} My Vue Starter
+    </footer>
+  </div>
 </template>
 
-<style>
-html,
-body,
-#app {
-  height: 100%;
-  margin: 0;
-}
-
-.page-center {
-  min-height: 100%;
-  display: grid;
-  place-items: center;
-  padding: 24x;
-}
-
-.form-warp {
-  width: 100%;
-  max-width: 560px;
-}
-</style>
+<script setup>
+import NavBar from './components/NavBar.vue'
+</script>
