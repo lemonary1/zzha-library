@@ -29,6 +29,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: dis
+          folder: dist
           clean: true
           signle-commit: true
